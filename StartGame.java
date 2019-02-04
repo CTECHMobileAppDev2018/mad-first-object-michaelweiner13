@@ -11,9 +11,10 @@ public class StartGame {
     
     // Print out player1's name using getName()
     System.out.println("Player1 name is: " + player1.getName());
-    
+   
     //Print out player1's health using getHealth()
     System.out.println(player1.getName() + "'s health is: " + player1.getHealth());
+    
     
     // Create a player for Michael
     Player player2 = new Player();
