@@ -24,18 +24,22 @@ public class StartGame {
     
     //Print out player2's health using getHealth()
     System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
-    
+   
     
     // *******************
     // ******Weapons******
     // *******************
     // Create a new weapon object for a new weapon called "Gun"
     Weapon gun = new Weapon();
-    
-    // Set the name of the new weapon to the Gun
-    gun.setName ("Gun");
+    gun.setName ("Gun"); // Set the name of the new weapon to the Gun
     
     // Print out the details of the gun to the user using getName() and getDamageDealt()
     System.out.println("The weapon: " + gun.getName() + " has been addded to the game. It does " + gun.getDamageDealt() + " damage to player's health.");
+    
+    
+    // *******************
+    // ******Actions******
+    // *******************
+    
   }  
 }
