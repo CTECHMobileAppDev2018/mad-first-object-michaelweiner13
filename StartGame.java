@@ -36,6 +36,6 @@ public class StartGame {
     gun.setName ("Gun");
     
     // Print out the details of the gun to the user using getName() and getDamageDealt()
-    System.out.println("The weapon: " + gun.getName() + " has been addded to the game it does " + gun.getDamageDealt() + " damage to player's health.");
+    System.out.println("The weapon: " + gun.getName() + " has been addded to the game. It does " + gun.getDamageDealt() + " damage to player's health.");
   }  
 }
