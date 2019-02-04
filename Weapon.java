@@ -1,37 +1,37 @@
 public class Weapon {
-  
+
   // Initalize 2 private variables to store data about the Weapon
   // Set to private to prevent tampering from the user
   // Values can be set and received through setName(), getName(), setDamageDealt(), and getDamageDealt()
   private String weaponName;
   private int damageDealt;
-  
+
   // Constructor
   // All weapons will start with 35 health damage
   Weapon() {
     this.damageDealt = 35;
   }
-  
+
   // Setter method for the name of the weapon
   // Sets the name of the weapon to the user's input if it passes basic error checking
-  public void setName(String newWeaponName) { 
+  public void setName(String newWeaponName) {
 
     // Make sure the length of the new name for the weapon is not blank
     if (newWeaponName.length() < 1) {
       System.out.println("Your weapon's name cannot be blank. Your weapon's name has not been changed.");
       return;
     }
-    
+
     // If the user's new weapon name meets the error checking, change the weapon name to the user's input
     this.weaponName = newWeaponName;
   }
-  
+
   // Getter method for the name of the weapon
   // Returns the name of the weapon
   public String getName() {
     return this.weaponName;
   }
-  
+
   // Setter method for the damage of the weapon
   public void setDamageDealt(int damageDone) {
     if (damageDone < 1) { // Checks to make sure that the user's damange change does at least 1 health damage
@@ -44,20 +44,20 @@ public class Weapon {
       this.damageDealt = damageDone;
     }
   }
-  
+
   // Getter method to return what the damage of the weapon is
   public int getDamageDealt() {
     return this.damageDealt;
   }
-  
+
   // Create method called 'damagePlayer'
   // Takes a player as an argument
   // Damages the player's health based off the wepaon and its damage it deals to players
   public void damagePlayer (Player userPlayer) {
+    System.out.println("The weapon - " +this.getName() + " - has damaged " + userPlayer.getName() + " for " + this.getDamageDealt() + ".");
     userPlayer.setHealth(userPlayer.getHealth() - this.damageDealt);
-    System.out.println(this.getName() + " has damaged " + userPlayer.getName() + " for " this.getDamageDealt() + ".");
-    System.out.println(userPlayer.getName() + " now has " + userPlayer.getHealth() + " health.");
+    System.out.println("" + userPlayer.getName() + " now has " + userPlayer.getHealth() + " health.");
     System.out.println();
   }
-  
+
 }
