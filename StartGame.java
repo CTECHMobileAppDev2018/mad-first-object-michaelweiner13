@@ -23,6 +23,9 @@ public class StartGame {
     
     //Print out player2's health using getHealth()
     System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
+    
+    Weapon gub = new Weapon();
+    gun.setName ("Knife");
+    System.out.println("The damage that " + knife.getName() + " dealt to the player was " + knife.getDamageDealt() + ".");
   }  
-  
 }
