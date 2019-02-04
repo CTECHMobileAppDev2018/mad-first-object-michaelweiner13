@@ -50,10 +50,10 @@ public class Weapon {
     return this.damageDealt;
   }
   
-  // Create method called 'playerHurt'
+  // Create method called 'damagePlayer'
   // Takes a player as an argument
   // Damages the player's health based off the wepaon and its damage it deals to players
-  public void playerHUrt (Player userPlayer) {
+  public void damagePlayer (Player userPlayer) {
    userPlayer.setHealth(userPlayer.getHealth() - this.damageDealt); 
   }
   
