@@ -40,6 +40,6 @@ public class StartGame {
     // *******************
     // ******Actions******
     // *******************
-    
+    gun.damagePlayer(player2);
   }  
 }
