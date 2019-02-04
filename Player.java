@@ -9,7 +9,7 @@ public class Player {
   
   // Constructor
   // Called when someone creates a Player object
-  public void Player() {
+  Player() {
     this.health = 100;
   }
   
