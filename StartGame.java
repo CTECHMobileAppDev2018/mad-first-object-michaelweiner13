@@ -37,14 +37,15 @@ public class StartGame {
 
     // Calls 'weaponAdded()' to inform the players of the game that a weapon has been added and what its damageDealt to other players is
     gun.weaponAdded();
-
     
-    // *******************
-    // ******Actions******
-    // *******************
+    // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
     gun.damagePlayer(player2);
+    
+    // Calls 'setDamageDealt' to the gun Weapon object to change the damage value it deals to players
+    gun.setDamageDealt(70);
+
+    // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
     gun.damagePlayer(player1);
-    gun.damagePlayer(player2);
     gun.damagePlayer(player2);  
   }
 }
