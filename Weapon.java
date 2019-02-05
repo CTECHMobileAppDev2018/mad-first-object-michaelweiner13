@@ -49,6 +49,13 @@ public class Weapon {
   public int getDamageDealt() {
     return this.damageDealt;
   }
+  
+  // Creates a method called 'weaponAdded()'
+  // Prints the details of a wepaon and its damage dealt to inform the players in the game
+  public void weaponAdded() {
+    System.out.println("The weapon - " + this.getName() + " - has been addded to the game. It does " + this.getDamageDealt() + " damage to player's health.");
+    System.out.println();
+  }
 
   // Create method called 'damagePlayer'
   // Takes a player as an argument
@@ -59,10 +66,4 @@ public class Weapon {
     System.out.println("" + userPlayer.getName() + " now has " + userPlayer.getHealth() + " health.");
     System.out.println();
   }
-  
-  public void weaponAdded() {
-    System.out.println("The weapon - " + this.getName() + " - has been addded to the game. It does " + this.getDamageDealt() + " damage to player's health.");
-    System.out.println();
-  }
-
 }
