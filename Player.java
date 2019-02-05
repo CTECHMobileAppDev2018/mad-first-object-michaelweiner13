@@ -36,10 +36,10 @@ public class Player {
   public void setHealth (int playerHealth) {
     // Checks to make sure the player's health is not trying to be set to anything less than 0
     if (playerHealth < 0) {
-      System.out.println("Your player's health cannot be less than 0. Your player is dead.");
+      System.out.println("" + this.getName() + "'s health cannot be lower than 0. " + this.getName() + " is dead.");
       this.health = 0;
     } else if (playerHealth > 100) { // Checks to make sure the player's health is not more than 100
-      System.out.println("Your player's health cannot be more than 100. Your player's health is now 100.");
+      System.out.println("" + this.getName() + "'s health cannot be more than 100." + this.getName() + "'s health is now 100.");
       this.health = 100;
     } else { // Return the user's change to the player's health
       this.health = playerHealth;
