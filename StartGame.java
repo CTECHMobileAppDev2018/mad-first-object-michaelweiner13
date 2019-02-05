@@ -11,7 +11,6 @@ public class StartGame {
 
     // Print out player1's name using getName()
     System.out.println("Player1 name is: " + player1.getName());
-    System.out.println();
 
     //Print out player1's health using getHealth()
     System.out.println(player1.getName() + "'s health is: " + player1.getHealth());
@@ -23,7 +22,6 @@ public class StartGame {
 
     // Print out player1's name using getName()
     System.out.println("Player2 name is: " + player2.getName());
-    System.out.println();
 
     //Print out player2's health using getHealth()
     System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
@@ -45,7 +43,8 @@ public class StartGame {
     // ******Actions******
     // *******************
     gun.damagePlayer(player2);
+    gun.damagePlayer(player1);
     gun.damagePlayer(player2);
-    gun.damagePlayer(player2);
+    gun.damagePlayer(player2);  
   }
 }
