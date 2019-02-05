@@ -35,9 +35,8 @@ public class StartGame {
     Weapon gun = new Weapon();
     gun.setName ("Gun"); // Set the name of the new weapon to the Gun
 
-    // Print out the details of the gun to the user using getName() and getDamageDealt()
-    System.out.println("The weapon - " + gun.getName() + " - has been addded to the game. It does " + gun.getDamageDealt() + " damage to player's health.");
-    System.out.println();
+    // Calls 'weaponAdded()' to inform the players of the game that a weapon has been added and what its damageDealt to other players is
+    gun.weaponAdded();
 
     // *******************
     // ******Actions******
