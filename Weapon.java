@@ -52,7 +52,7 @@ public class Weapon {
 
   // Create method called 'damagePlayer'
   // Takes a player as an argument
-  // Damages the player's health based off the wepaon and its damage it deals to players
+  // Damages the player's health based the weapon object's 'damageDealt' value
   public void damagePlayer (Player userPlayer) {
     System.out.println("The weapon - " +this.getName() + " - has damaged " + userPlayer.getName() + " for " + this.getDamageDealt() + ".");
     userPlayer.setHealth(userPlayer.getHealth() - this.damageDealt);
