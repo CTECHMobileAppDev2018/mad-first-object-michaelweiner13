@@ -41,7 +41,9 @@ public class Weapon {
       System.out.println("Your weapon's damange cannot be more than 1. Your weapon's damage dealt to players is now 100.");
       this.damageDealt = 100;
     } else { // If user's new damageDone value passes error checking, set the weapon's damage to the user's value
-      this.damageDealt = damageDone;
+      this.damageDealt = damageDone; 
+      System.out.println("The weapon - " + this.getName() + " - now does " + this.getDamageDealt() + " damage to players.");
+      System.out.println();
     }
   }
 
