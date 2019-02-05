@@ -35,10 +35,10 @@ public class Weapon {
   // Setter method for the damage of the weapon
   public void setDamageDealt(int damageDone) {
     if (damageDone < 1) { // Checks to make sure that the user's damange change does at least 1 health damage
-      System.out.println("Your weapons damange cannot be less than 1. Your weapon's damage dealt to players is now 1.");
+      System.out.println("Your weapon's damange cannot be less than 1. Your weapon's damage dealt to players is now 1.");
       this.damageDealt = 1;
     } else if (damageDone > 100) {
-      System.out.println("Your weapons damange cannot be more than 1. Your weapon's damage dealt to players is now 100.");
+      System.out.println("Your weapon's damange cannot be more than 1. Your weapon's damage dealt to players is now 100.");
       this.damageDealt = 100;
     } else { // If user's new damageDone value passes error checking, set the weapon's damage to the user's value
       this.damageDealt = damageDone;
