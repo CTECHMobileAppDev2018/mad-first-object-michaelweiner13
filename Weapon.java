@@ -59,5 +59,10 @@ public class Weapon {
     System.out.println("" + userPlayer.getName() + " now has " + userPlayer.getHealth() + " health.");
     System.out.println();
   }
+  
+  public void weaponAdded() {
+    System.out.println("The weapon - " + this.getName() + " - has been addded to the game. It does " + this.getDamageDealt() + " damage to player's health.");
+    System.out.println();
+  }
 
 }
