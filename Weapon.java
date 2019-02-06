@@ -36,12 +36,15 @@ public class Weapon {
   public void setDamageDealt(int damageDone) {
     if (damageDone < 1) { // Checks to make sure that the user's damange change does at least 1 health damage
       System.out.println("Your weapon's damange cannot be less than 1. Your weapon's damage dealt to players is now 1.");
+      System.out.println();
       this.damageDealt = 1;
     } else if (damageDone > 100) {
       System.out.println("Your weapon's damange cannot be more than 1. Your weapon's damage dealt to players is now 100.");
+      System.out.println();
       this.damageDealt = 100;
     } else { // If user's new damageDone value passes error checking, set the weapon's damage to the user's value
-      this.damageDealt = damageDone; 
+      this.damageDealt = damageDone;
+      System.out.println("ATTENTION PLAYERS! IMCOMING INTEL:");
       System.out.println("The weapon - " + this.getName() + " - now does " + this.getDamageDealt() + " damage to players.");
       System.out.println();
     }
@@ -63,6 +66,7 @@ public class Weapon {
   // Takes a player as an argument
   // Damages the player's health based the weapon object's 'damageDealt' value
   public void damagePlayer (Player userPlayer) {
+    System.out.println("whooooOOAAAA. LOOK OUT!");
     System.out.println("The weapon - " +this.getName() + " - has damaged " + userPlayer.getName() + " for " + this.getDamageDealt() + ".");
     userPlayer.setHealth(userPlayer.getHealth() - this.damageDealt);
     System.out.println("" + userPlayer.getName() + " now has " + userPlayer.getHealth() + " health.");
