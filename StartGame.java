@@ -31,26 +31,40 @@ public class StartGame {
     // ******Weapons******
     // *******************
     
-    // Create a new weapon object for a new weapon called "Gun"
-    Weapon gun = new Weapon();
-    gun.setName ("Gun"); // Set the name of the new weapon to the Gun
+    // Create a new weapon object for a new weapon called "gun"
+    Weapon gun = new Weapon("Gun", 40);
 
     // Calls 'weaponAdded()' to inform the players of the game that a weapon has been added and what its damageDealt to other players is
     gun.weaponAdded();
+    
+    // Create a new weapon object for a new weapon called "knife"
+    Weapon knife = new Weapon("Knife", 20);
+
+    // Calls 'weaponAdded()' to inform the players of the game that a weapon has been added and what its damageDealt to other players is
+    knife.weaponAdded();
     
     
     // ************************
     // ******Game Actions******
     // ************************
     
+    // Calls 'setDamageDealt' to the knife Weapon object to change the damage value it deals to players
+    knife.setDamageDealt(90);
+    
+    // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
+    knife.damagePlayer(player0);
+    
     // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
     gun.damagePlayer(player1);
     
     // Calls 'setDamageDealt' to the gun Weapon object to change the damage value it deals to players
     gun.setDamageDealt(80);
+    
+    // Calls 'weaponRemoved' to inform the player that the knife weapon is no longer usabele
+    knife.weaponRemoved();
 
     // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
     gun.damagePlayer(player0);
-    gun.damagePlayer(player1);  
+    gun.damagePlayer(player1);
   }
 }
