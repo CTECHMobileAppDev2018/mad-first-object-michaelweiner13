@@ -47,7 +47,7 @@ public class StartGame {
     gun.damagePlayer(player1);
     
     // Calls 'setDamageDealt' to the gun Weapon object to change the damage value it deals to players
-    gun.setDamageDealt(70);
+    gun.setDamageDealt(80);
 
     // Calls 'damagePlayer()' to deal damage to the players when they are injured by the weapon
     gun.damagePlayer(player0);
