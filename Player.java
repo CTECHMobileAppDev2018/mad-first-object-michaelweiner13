@@ -35,7 +35,7 @@ public class Player {
   // Setter method for the player's health
   public void setHealth (int playerHealth) {
     // Checks to make sure the player's health is not trying to be set to anything less than 0
-    if (playerHealth < 0) {
+    if (playerHealth <= 0) {
       System.out.println("" + this.getName() + " is now dead. Whata shame...");
       this.health = 0;
     } else if (playerHealth > 100) { // Checks to make sure the player's health is not more than 100
