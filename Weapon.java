@@ -7,9 +7,10 @@ public class Weapon {
   private int damageDealt;
 
   // Constructor
-  // All weapons will start with 35 health damage
-  Weapon() {
-    this.damageDealt = 35;
+  // Takes two arguments - 1) a string to be used as the weapon's name and - 2) an integer to be used as the weapon's inital damage to players
+  Weapon(String name, int damage) {
+    this.weaponName = name;
+    this.damageDealt = damage;
   }
 
   // Setter method for the name of the weapon
@@ -59,6 +60,13 @@ public class Weapon {
   // Prints the details of a wepaon and its damage dealt to inform the players in the game
   public void weaponAdded() {
     System.out.println("The weapon - " + this.getName() + " - has been addded to the game. It does " + this.getDamageDealt() + " damage to player's health.");
+    System.out.println();
+  }
+  
+  // Creates a method called 'weaponRemoved()'
+  // Informs the players that a weapon has been removed
+  public void weaponRemoved() {
+    System.out.println("The weapon - " + this.getName() + " - has been removed from the game. Don't be a noob. Have more than one gun. Seriously...");
     System.out.println();
   }
 
